@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             int position = data.getExtras().getInt(ITEM_POSITION);
 
             //Update the model with the new item text at the edited position
-            if(!updatedItem.equals(items.get(position))) {
+            if(!updatedItem.equals(items.get(position)) && !updatedItem.equals("")) {
                 items.set(position, updatedItem);
                 itemsAdapter.notifyDataSetChanged();
                 writeItems();
@@ -113,16 +113,6 @@ public class MainActivity extends AppCompatActivity {
             }
             else
                 Toast.makeText(this,"Item remained unchanged",Toast.LENGTH_SHORT).show();
-            /*
-            //Notify the adapter that the model changed
-            itemsAdapter.notifyDataSetChanged();
-
-            //Persist the changed items
-            writeItems();
-
-            //Notify the user that the operation completed successfully
-            Toast.makeText(this,"Item updated successfully",Toast.LENGTH_SHORT).show();
-            */
         }
     }
 
