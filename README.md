@@ -4,7 +4,7 @@
 
 Submitted by: **Francis Gold Sy**
 
-Time spent: **6** hours spent in total
+Time spent: **7** hours spent in total
 
 ## User Stories
 
